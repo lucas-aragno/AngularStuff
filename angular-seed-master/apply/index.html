@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body ng-app="applyApp">
+	<input ng-controller="SomeController" id="input" ng-model="name">
+	<div id="output"> {{ name }} </div>
+	<div ng-controller="TimeoutController">
+		<button ng-click="scheduleTask()"> Get Message after 3 seconds</button>
+		<br /> Message fetched: {{ message }}
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.12/angular.min.js"></script>
+	<script type="text/javascript" src="js/controllers.js"></script>
+</body>
+</html>
